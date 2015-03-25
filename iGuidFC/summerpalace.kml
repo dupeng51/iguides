@@ -1,0 +1,630 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>sumer palace</name>
+		<Placemark>
+			<styleUrl>#poly-FFD500-1-102</styleUrl>
+			<name>101</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[overview]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.27484440803528,39.996857113269925,0.0 116.27494096755981,39.99631464764285,0.0 116.27564907073975,39.996392730081915,0.0 116.27555787563324,39.99692286638643,0.0 116.27484440803528,39.996857113269925,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-FFFF00-1-102</styleUrl>
+			<name>108</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[仁寿殿]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.27378225326538,39.99677081220838,0.0 116.27386808395386,39.99621190745541,0.0 116.27457618713379,39.99629409961773,0.0 116.27449035644531,39.9968406749809,0.0 116.27378225326538,39.99677081220838,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-D4FF00-1-102</styleUrl>
+			<name>112</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[玉澜堂]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.2729400396347,39.99715711134957,0.0 116.2730473279953,39.996191359399376,0.0 116.27354085445404,39.99626944197943,0.0 116.27331018447876,39.99718998777134,0.0 116.2729400396347,39.99715711134957,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-AAFF00-1-102</styleUrl>
+			<name>114</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[知春亭]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.27281665802002,39.995609846850314,0.0 116.27289444208145,39.99530367747599,0.0 116.27388417720795,39.99520299060331,0.0 116.27372056245804,39.9956406691945,0.0 116.27281665802002,39.995609846850314,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-55FF00-1-102</styleUrl>
+			<name>102</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[德和园]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.27328872680664,39.99784751288257,0.0 116.27343356609344,39.99689820897517,0.0 116.27408802509308,39.99696396205213,0.0 116.27392709255219,39.99790093651977,0.0 116.27328872680664,39.99784751288257,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-2BFF00-1-102</styleUrl>
+			<name>104</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[乐寿堂]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.2725967168808,39.99712423491201,0.0 116.27250552177429,39.99776943210689,0.0 116.27206027507782,39.99772011788677,0.0 116.27215147018433,39.997070810667175,0.0 116.2725967168808,39.99712423491201,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-00FF00-1-102</styleUrl>
+			<name>110</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[铜牛]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.27351403236389,39.98956634382424,0.0 116.27318143844604,39.98937728308078,0.0 116.27331554889679,39.98923343216458,0.0 116.27374470233917,39.98949236359562,0.0 116.27351403236389,39.98956634382424,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-00FF55-1-102</styleUrl>
+			<name>101</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[颐和园]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.27404510974884,39.989835548979734,0.0 116.27399414777756,39.989508803653365,0.0 116.27457618713379,39.98945742845987,0.0 116.27462446689606,39.98978828402927,0.0 116.27404510974884,39.989835548979734,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-00FFAA-1-102</styleUrl>
+			<name>109</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[十七孔桥]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.2707245349884,39.98988692388891,0.0 116.27053678035736,39.98961566393212,0.0 116.27272009849548,39.98862103487435,0.0 116.27328336238861,39.989081360866685,0.0 116.2707245349884,39.98988692388891,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-00FFD5-1-102</styleUrl>
+			<name>105</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[龙王庙]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.27007275819778,39.990314361634745,0.0 116.27007812261581,39.989638268969664,0.0 116.27049922943115,39.98963621396656,0.0 116.27050459384918,39.99030614170332,0.0 116.27007275819778,39.990314361634745,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-00FFFF-1-102</styleUrl>
+			<name>113</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[长廊]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.26965701580048,39.99689409940576,0.0 116.27182424068451,39.997066701108146,0.0 116.27177596092224,39.99735436964269,0.0 116.2696248292923,39.997198206874316,0.0 116.26965701580048,39.99689409940576,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-00AAFF-1-102</styleUrl>
+			<name>107</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[排云门前的12生肖]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.2677526473999,39.99640094928086,0.0 116.26773655414581,39.99622834589581,0.0 116.26851439476013,39.99630848323596,0.0 116.26847416162491,39.99646053844343,0.0 116.26808658226491,39.996422525226045,0.0 116.2677526473999,39.99640094928086,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-007FFF-1-102</styleUrl>
+			<name>106</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[排云殿]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.26768290996552,39.99646259324122,0.0 116.26846075057983,39.99654067551115,0.0 116.26833200454712,39.997247521471316,0.0 116.26759707927704,39.99718587821948,0.0 116.26768290996552,39.99646259324122,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-0055FF-1-102</styleUrl>
+			<name>103</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[佛香阁]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.2676078081131,39.99801189317115,0.0 116.26768290996552,39.997522860650164,0.0 116.26816034317017,39.99755984642542,0.0 116.26806914806366,39.99804887868156,0.0 116.2676078081131,39.99801189317115,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-002BFF-1-102</styleUrl>
+			<name>117</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[石坊]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.26350402832031,39.9972639596624,0.0 116.26361668109894,39.99629820922325,0.0 116.26426577568054,39.99633108605851,0.0 116.26382052898407,39.99714889224167,0.0 116.26350402832031,39.9972639596624,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-AA00FF-1-102</styleUrl>
+			<name>118</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[苏州街]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.2691581249237,40.0006624706907,0.0 116.26672804355621,40.0005597370446,0.0 116.2667441368103,40.00027208201316,0.0 116.26918494701385,40.00038714417114,0.0 116.2691581249237,40.0006624706907,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-FF00FF-1-102</styleUrl>
+			<name>101</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[overview]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.2670150399208,40.001691853290886,0.0 116.26703381538391,40.000978889349526,0.0 116.26927614212036,40.00110216894955,0.0 116.2682193517685,40.00177609349534,0.0 116.2670150399208,40.001691853290886,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+<Placemark>
+<styleUrl>#poly-3400FF-1-102</styleUrl>
+<name>119</name>
+<ExtendedData>
+</ExtendedData>
+<description><![CDATA[听鹂馆]]></description>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<tessellate>1</tessellate>
+<coordinates>116.26452329999998,39.997165300000006,0.0 116.26460369999998,39.9967051,0.0 116.26519919999998,39.996779000000004,0.0 116.26510799999998,39.9972229,0.0 116.26452329999998,39.997165300000006,0.0</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+		<Placemark>
+			<styleUrl>#poly-FF00D4-1-102</styleUrl>
+			<name>116</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[四大部洲]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.26767754554749,39.99995155069349,0.0 116.26753270626068,39.99824202491041,0.0 116.26932442188263,39.99831599566186,0.0 116.26858949661255,40.00001319144876,0.0 116.26767754554749,39.99995155069349,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Style id='icon-seq-0-0'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=A|FF0000|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-seq-0-1'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=B|FF2B00|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-seq-0-13'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=N|00FF2B|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-seq-0-15'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=P|00FF80|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-seq-0-19'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=T|00D4FF|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-seq-0-2'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=C|FF5500|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-seq-0-24'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=Y|0000FF|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-seq-0-26'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=a|5500FF|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-seq-0-27'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=b|7F00FF|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-seq-0-29'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=d|D400FF|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-seq-0-3'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=D|FF8000|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-seq-0-4'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=E|FFAA00|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-seq-0-9'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://chart.googleapis.com/chart?chst=d_map_pin_letter&amp;chld=J|80FF00|000000</href>
+				</Icon>
+				<hotSpot x='10' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='poly-002BFF-1-102'>
+			<LineStyle>
+				<color>ffFF2B00</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66FF2B00</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-0055FF-1-102'>
+			<LineStyle>
+				<color>ffFF5500</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66FF5500</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-007FFF-1-102'>
+			<LineStyle>
+				<color>ffFF7F00</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66FF7F00</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-00AAFF-1-102'>
+			<LineStyle>
+				<color>ffFFAA00</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66FFAA00</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-00FF00-1-102'>
+			<LineStyle>
+				<color>ff00FF00</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>6600FF00</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-00FF55-1-102'>
+			<LineStyle>
+				<color>ff55FF00</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>6655FF00</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-00FFAA-1-102'>
+			<LineStyle>
+				<color>ffAAFF00</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66AAFF00</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-00FFD5-1-102'>
+			<LineStyle>
+				<color>ffD5FF00</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66D5FF00</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-00FFFF-1-102'>
+			<LineStyle>
+				<color>ffFFFF00</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66FFFF00</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-2A00FF-1-102'>
+			<LineStyle>
+				<color>ffFF002A</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66FF002A</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-2BFF00-1-102'>
+			<LineStyle>
+				<color>ff00FF2B</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>6600FF2B</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-55FF00-1-102'>
+			<LineStyle>
+				<color>ff00FF55</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>6600FF55</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-AA00FF-1-102'>
+			<LineStyle>
+				<color>ffFF00AA</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66FF00AA</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-AAFF00-1-102'>
+			<LineStyle>
+				<color>ff00FFAA</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>6600FFAA</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-D4FF00-1-102'>
+			<LineStyle>
+				<color>ff00FFD4</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>6600FFD4</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-FF00D4-1-102'>
+			<LineStyle>
+				<color>ffD400FF</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66D400FF</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-FF00FF-1-102'>
+			<LineStyle>
+				<color>ffFF00FF</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66FF00FF</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-FFD500-1-102'>
+			<LineStyle>
+				<color>ff00D5FF</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>6600D5FF</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-FFFF00-1-102'>
+			<LineStyle>
+				<color>ff00FFFF</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>6600FFFF</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+	</Document>
+</kml>

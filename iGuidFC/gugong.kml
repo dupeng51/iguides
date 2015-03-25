@@ -1,0 +1,692 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>gugong</name>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>202</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[九龙壁]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.3935321568456,39.91731529485651,0.0 116.39354288568381,39.917097233688715,0.0 116.39490544802686,39.91713426299141,0.0 116.39490008360883,39.917348209689806,0.0 116.3935321568456,39.91731529485651,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>101</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[午门]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39026522636414,39.912353203570106,0.0 116.39029741287231,39.91119286171378,0.0 116.39182090759277,39.91123400892423,0.0 116.39174580574036,39.91236966217845,0.0 116.39026522636414,39.912353203570106,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>102</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[太和门(Tai He Men)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39093577861786,39.91308560781145,0.0 116.39133810997009,39.91310206624404,0.0 116.39131128787994,39.91382623335296,0.0 116.39046370983124,39.91380977509416,0.0 116.39049589633942,39.913102066243894,0.0 116.39093577861786,39.91308560781145,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>230</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[金水桥]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.38979315757751,39.91267826035279,0.0 116.39211058616638,39.91271117740935,0.0 116.39208376407623,39.913130868493425,0.0 116.38977706432343,39.91306914937766,0.0 116.38979315757751,39.91270294814669,0.0 116.38979315757751,39.91267826035279,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>229</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[太和殿广场(Tai He Dian Guang Chang)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.3900238275528,39.915142881208666,0.0 116.39005601406097,39.91396201383526,0.0 116.39174580574036,39.91399493027482,0.0 116.39170289039612,39.91517579708053,0.0 116.3900238275528,39.915142881208666,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>103</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[太和殿(Tai He Dian)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39003455638885,39.91516756811438,0.0 116.39167606830597,39.91520871293707,0.0 116.39163851737976,39.91606451964617,0.0 116.38998627662659,39.9160274897697,0.0 116.39003455638885,39.91516756811438,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>104</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[中和殿(Zhong He Dian)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.38998627662659,39.9160274897697,0.0 116.39163851737976,39.91606451964611,0.0 116.39160633087158,39.91659939340894,0.0 116.38998091220856,39.9165664782212,0.0 116.38998627662659,39.9160274897697,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>105</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[保和殿(Bao He Dian)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39000236988068,39.91696557380692,0.0 116.38998091220856,39.9165664782212,0.0 116.3915205001831,39.91661585099708,0.0 116.39149904251099,39.917014946295026,0.0 116.39000236988068,39.91696557380692,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>228</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[大石雕（Da Shi Diao）]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39086067676544,39.91737701012032,0.0 116.39086067676544,39.91750455487541,0.0 116.39053612947464,39.917502497703886,0.0 116.39053881168365,39.91715483481808,0.0 116.3908714056015,39.91715894918206,0.0 116.39086067676544,39.91737701012032,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>106</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[乾清门(Qian Qing Men)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39047175645828,39.91782341572427,0.0 116.39048248529434,39.917521012246006,0.0 116.39094918966293,39.91752924092975,0.0 116.39094114303589,39.91783781585656,0.0 116.39047175645828,39.91782341572427,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>107</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[乾清宫(Qian Qing Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39034032821655,39.91782341572438,0.0 116.3911235332489,39.91784398734107,0.0 116.39105647802353,39.91877998936272,0.0 116.39028131961823,39.91876353229494,0.0 116.39034032821655,39.91782341572438,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>108</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[交泰殿(Jiao Tai Dian)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39016598463058,39.918769703695716,0.0 116.39117449522018,39.918790275028094,0.0 116.39114767313004,39.91913587248892,0.0 116.3901686668396,39.91910707276719,0.0 116.39016598463058,39.918769703695716,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>109</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[坤宁宫(Kun Ning Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39015525579453,39.91969129332529,0.0 116.39016598463058,39.919123529752554,0.0 116.39108330011368,39.91915438658937,0.0 116.39106720685959,39.9197139214861,0.0 116.39015525579453,39.91969129332529,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>110</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[御花园(Yu Hua Yuan)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.38999968767166,39.91969129332539,0.0 116.39125764369965,39.91972214990644,0.0 116.39124691486359,39.91982089087231,0.0 116.39000505208969,39.91979209143858,0.0 116.38999968767166,39.91969129332539,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>114</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[养性斋(Yang Xing Zhai)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.3901150226593,39.91984763319275,0.0 116.39010429382324,39.91998340173512,0.0 116.38981461524963,39.919983401735344,0.0 116.38981729745865,39.91984146188894,0.0 116.3901150226593,39.91984763319275,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>115</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[绛雪轩(Jiang Xue Xuan)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39138907194138,39.92001014399231,0.0 116.39107257127762,39.91999985851008,0.0 116.39107793569565,39.91984557609148,0.0 116.39140248298645,39.919862032899424,0.0 116.39138907194138,39.92001014399231,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>112</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[钦安殿(Qin An Dian)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.3903295993805,39.920333107347716,0.0 116.39034032821655,39.92019322531704,0.0 116.39084994792938,39.92020556786069,0.0 116.39083921909332,39.920345449866076,0.0 116.3903295993805,39.920333107347716,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>116</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[顺贞门(Shun Zhen Men)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39039665460427,39.92054498697504,0.0 116.39040470123223,39.92045447535504,0.0 116.39072656637279,39.92046681785783,0.0 116.39072120195306,39.92055938653761,0.0 116.39039665460427,39.92054498697504,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>113</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[堆秀山（Dui Xiu Shan）]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39083653688431,39.9205635006578,0.0 116.39084994792938,39.92038247740807,0.0 116.39106452465057,39.92038453449316,0.0 116.39105647802353,39.920569671896494,0.0 116.39083653688431,39.9205635006578,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>111</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[神武门(Shen Wu Men)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39016062021255,39.920754808799295,0.0 116.39017134904861,39.92057378605535,0.0 116.39097064733505,39.920584071451344,0.0 116.39095455408096,39.920775379535385,0.0 116.39016062021255,39.920754808799295,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>212</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[珍妃井(Zhen Fei Jing)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39383256435394,39.92040304825601,0.0 116.3938245177269,39.92062315594207,0.0 116.39370650053024,39.92061698470818,0.0 116.39371454715729,39.92039276283282,0.0 116.39383256435394,39.92040304825601,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>201</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[养心殿(Yang Xin Dian)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.38912260532379,39.91833976143411,0.0 116.38910114765167,39.91810936064224,0.0 116.38973414897919,39.91813404647845,0.0 116.38972342014313,39.91836856147858,0.0 116.38912260532379,39.91833976143411,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>213</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[永寿宫(Yong Shou Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.38931572437286,39.91881701775127,0.0 116.38931035995483,39.91857427572973,0.0 116.38979852199554,39.918594847120865,0.0 116.38980388641357,39.918833474806334,0.0 116.38931572437286,39.91881701775127,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>214</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[太极殿(Tai Ji Dian)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.3887095451355,39.91880056069225,0.0 116.38871490955353,39.918603075675584,0.0 116.38913333415985,39.91860718995257,0.0 116.38911724090576,39.91882113201542,0.0 116.3887095451355,39.91880056069225,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>215</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[翊坤宫(Yi Kun Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.3893210887909,39.9192901565066,0.0 116.38932645320892,39.91907621590907,0.0 116.38977706432343,39.91909267290185,0.0 116.38976097106934,39.91931072768267,0.0 116.3893210887909,39.9192901565066,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>216</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[长春宫(Chang Chun Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.3886559009552,39.91927369956128,0.0 116.38868272304535,39.919006273645685,0.0 116.38913333415985,39.91902273065525,0.0 116.38909041881561,39.91928604227058,0.0 116.3886559009552,39.91927369956128,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>218</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[咸福宫(Xian Fu Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.3886559009552,39.91973860674398,0.0 116.38866662979126,39.91951232488118,0.0 116.3891065120697,39.91952055332565,0.0 116.38909578323364,39.91975094936953,0.0 116.3886559009552,39.91973860674398,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>217</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[储秀宫(Chu Xiu Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.38929963111877,39.91975506357754,0.0 116.38931572437286,39.919483525317716,0.0 116.3897556066513,39.91949586798925,0.0 116.38974487781525,39.919763291992844,0.0 116.38929963111877,39.91975506357754,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>227</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[斋宫(Zhai Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.3915741443634,39.91823278973429,0.0 116.39159560203552,39.917969474069025,0.0 116.39201402664185,39.91797770269888,0.0 116.39200866222382,39.91825336122798,0.0 116.3915741443634,39.91823278973429,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>219</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[景仁宫(Jing Ren Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.3915365934372,39.91888284594777,0.0 116.39154732227325,39.91864010415958,0.0 116.39199256896973,39.918652446983145,0.0 116.3919872045517,39.91890341724623,0.0 116.3915365934372,39.91888284594777,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>220</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[延禧宫(Yan Xi Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39220178127289,39.91905564466247,0.0 116.39220178127289,39.91866067553094,0.0 116.39266848564148,39.91867713262358,0.0 116.39266848564148,39.91908033015764,0.0 116.39220178127289,39.91905564466247,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>221</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[承乾宫(Cheng Qian Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39149904251099,39.91934775578404,0.0 116.39153122901917,39.919137929611566,0.0 116.39198184013367,39.919154386589526,0.0 116.39197111129761,39.91936832694281,0.0 116.39149904251099,39.91934775578404,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>222</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[永和宫(Yong He Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39216959476471,39.91937244117382,0.0 116.39217495918274,39.91916672932037,0.0 116.39260947704315,39.919183186291384,0.0 116.39260947704315,39.919384783865375,0.0 116.39216959476471,39.91937244117382,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>223</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[钟粹宫(Zhong Cui Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39150440692902,39.919812662463926,0.0 116.39150977134705,39.91959460928144,0.0 116.39196038246155,39.91959460928144,0.0 116.39194965362549,39.91982500507614,0.0 116.39150440692902,39.919812662463926,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>224</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[景阳宫(Jing Yang Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39215350151062,39.919812662463926,0.0 116.39215350151062,39.91961929458224,0.0 116.39259338378906,39.91962752301386,0.0 116.39257729053497,39.91982500507614,0.0 116.39215350151062,39.919812662463926,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>203</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[皇极门(Huang Ji Men)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.3935321568456,39.91731529485651,0.0 116.39490008360883,39.917348209689806,0.0 116.39486253261566,39.91759095602639,0.0 116.39350533485413,39.91755392697508,0.0 116.3935321568456,39.91731529485651,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>204</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[皇极殿(Huang Ji Dian)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39367163181305,39.918553704332425,0.0 116.39371991157532,39.918022960145464,0.0 116.3945996761322,39.91805998894314,0.0 116.39457821846008,39.91857427572973,0.0 116.39367163181305,39.918553704332425,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>205</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[宁寿宫(Ning Shou Gong)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.3936609028126,39.91889518879445,0.0 116.3936609028126,39.918673018377625,0.0 116.39457821846099,39.918693589728534,0.0 116.39456212520395,39.918928102868904,0.0 116.3936609028126,39.91889518879445,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>206</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[养性殿(Yang Xing Dian)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39381647109985,39.91949175376567,0.0 116.39383256435394,39.91924078565879,0.0 116.3943099975586,39.91925312837404,0.0 116.3943099975586,39.919504096435695,0.0 116.39381647109985,39.91949175376567,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>211</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[禊赏亭(Xi Shang Ting)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39338731777616,39.91925312811771,0.0 116.3933980466295,39.91911324414062,0.0 116.39359116544608,39.91911735838187,0.0 116.39357238999617,39.91925929946959,0.0 116.39338731777616,39.91925312811771,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>207</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[畅音阁(Chang Yin Ge)]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39437437057495,39.919465011306194,0.0 116.39438778162003,39.919201700379034,0.0 116.39475524425507,39.919214043101384,0.0 116.39473915100098,39.919483525317666,0.0 116.39437437057495,39.919465011306194,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>208</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[阅是楼]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39437437057495,39.919465011306194,0.0 116.39473915100098,39.919483525317666,0.0 116.39473646879196,39.919553467093486,0.0 116.39437168836594,39.9195370102115,0.0 116.39437437057495,39.919465011306194,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>209</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[乐寿堂]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39378696680069,39.9199155174976,0.0 116.3938057422638,39.91954935287344,0.0 116.39430731534958,39.91956786686219,0.0 116.39429926872253,39.91992786009135,0.0 116.39378696680069,39.9199155174976,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>210</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[颐和轩]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39381378889084,39.92021379622193,0.0 116.3938245177269,39.92002454366479,0.0 116.39429122209549,39.9200348291433,0.0 116.39427244663239,39.92022613876184,0.0 116.39381378889084,39.92021379622193,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#poly-DB4436-4-76</styleUrl>
+			<name>301</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[故宫]]></description>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.39029741287231,39.91119286171378,0.0 116.39049053192139,39.90753066098658,0.0 116.39189600944519,39.907547120753655,0.0 116.39182090759277,39.91123400892423,0.0 116.39029741287231,39.91119286171378,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Style id='poly-DB4436-4-76'>
+			<LineStyle>
+				<color>ff3644DB</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C3644DB</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+	</Document>
+</kml>
