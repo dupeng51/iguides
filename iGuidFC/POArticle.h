@@ -29,4 +29,7 @@
 @property (nonatomic,retain) NSString *caption;
 @property (nonatomic,retain) NSString *picture;
 
+@property NSNumber *spotID;
+@property NSNumber *cityID;
+
 @end

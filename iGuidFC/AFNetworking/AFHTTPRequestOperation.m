@@ -179,11 +179,14 @@ static void AFSwizzleClassMethodWithClassAndSelectorUsingBlock(Class klass, SEL 
 
 - (void)pause {
     unsigned long long offset = 0;
+//    NSOutputStream *output = self.outputStream;
+//    NSNumber *offsets = [self.outputStream propertyForKey:NSStreamFileCurrentOffsetKey];
     if ([self.outputStream propertyForKey:NSStreamFileCurrentOffsetKey]) {
         offset = [[self.outputStream propertyForKey:NSStreamFileCurrentOffsetKey] unsignedLongLongValue];
     } else {
         offset = [[self.outputStream propertyForKey:NSStreamDataWrittenToMemoryStreamKey] length];
     }
+//    offset = [[self.outputStream propertyForKey:NSStreamFileCurrentOffsetKey] unsignedLongLongValue];
 
     NSMutableURLRequest *mutableURLRequest = [self.request mutableCopy];
     if ([self.response respondsToSelector:@selector(allHeaderFields)] && [[self.response allHeaderFields] valueForKey:@"ETag"]) {

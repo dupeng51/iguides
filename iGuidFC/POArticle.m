@@ -22,5 +22,11 @@
     _voice_filename1 = nil;
     remark = nil;
     imagename = nil;
+    _picture = nil;
+    _link = nil;
+    _caption = nil;
+    
+    _spotID = nil;
+    _cityID = nil;
 }
 @end

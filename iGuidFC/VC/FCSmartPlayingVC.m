@@ -414,7 +414,8 @@
         }
         
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-        NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//        NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+        NSString *documentsDirectory= NSTemporaryDirectory();
         NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
         NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
         float voice_volume = [[dict objectForKey:keyVoiceVolume] floatValue];
@@ -424,7 +425,7 @@
         [appDelegate.audioPlayer prepareToPlay];
         [appDelegate.audioPlayer play];
         appDelegate.isSmartMode = YES;
-        [appDelegate playBackground];
+        [appDelegate playBackground:currentSpot.spotID.stringValue];
         
         currentPlayingSpot = currentSpot;
         appDelegate.currentPlayingIndex = [spots indexOfObject:currentSpot];

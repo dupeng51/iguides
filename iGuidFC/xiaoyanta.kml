@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>未命名的地图</name>
+		<description><![CDATA[]]></description>
+		<Folder>
+			<name>未命名的图层</name>
+			<Placemark>
+				<name>110101</name>
+				<styleUrl>#poly-000000-1-76-nodesc</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>108.9370233,34.2423131,0.0 108.9370394,34.2418519,0.0 108.9383429,34.2419096,0.0 108.9383161,34.2423708,0.0 108.9370233,34.2423131,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>110102</name>
+				<styleUrl>#poly-000000-1-76-nodesc</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>108.9371949,34.2412001,0.0 108.9372218,34.2403708,0.0 108.93769380000002,34.2403885,0.0 108.937667,34.2412001,0.0 108.9371949,34.2412001,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>110103</name>
+				<styleUrl>#poly-000000-1-76-nodesc</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>108.93691060000002,34.2397987,0.0 108.9369267,34.2392267,0.0 108.9374525,34.2392311,0.0 108.9378548,34.2392444,0.0 108.9378226,34.2398165,0.0 108.93691060000002,34.2397987,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Style id='poly-000000-1-76-nodesc-normal'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C000000</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<Style id='poly-000000-1-76-nodesc-highlight'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>2.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C000000</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<StyleMap id='poly-000000-1-76-nodesc'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#poly-000000-1-76-nodesc-normal</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#poly-000000-1-76-nodesc-highlight</styleUrl>
+			</Pair>
+		</StyleMap>
+	</Document>
+</kml>

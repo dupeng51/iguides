@@ -116,7 +116,8 @@
 -(IBAction)switchPlayNext:(id)sender
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     
     // Load the file content and read the data into arrays
@@ -131,7 +132,8 @@
 -(IBAction)switchPlayNearby:(id)sender
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     
     // Load the file content and read the data into arrays
@@ -168,7 +170,8 @@
 -(IBAction)switchPlayMusic:(id)sender
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     
     // Load the file content and read the data into arrays
@@ -192,7 +195,8 @@
 -(IBAction)changeVoiceVolume:(id)sender
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     
     // Load the file content and read the data into arrays
@@ -211,7 +215,8 @@
 -(IBAction)changeMusicVolume:(id)sender
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     
     // Load the file content and read the data into arrays
@@ -230,7 +235,8 @@
 -(IBAction)changeSatellite:(id)sender
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     
     // Load the file content and read the data into arrays
@@ -265,7 +271,8 @@
 -(IBAction)switchVoice:(id)sender
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     
     // Load the file content and read the data into arrays
@@ -363,7 +370,8 @@
 {
     //从Document目录读取数据
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     // Find out the path of recipes.plist
     //    NSString *path = [[NSBundle mainBundle] pathForResource:@"guidesetting" ofType:@"plist"];
@@ -404,7 +412,8 @@
     float result = 0;
     //从Document目录读取数据
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     // Find out the path of recipes.plist
     //    NSString *path = [[NSBundle mainBundle] pathForResource:@"guidesetting" ofType:@"plist"];
@@ -421,7 +430,8 @@
 {
     //从Document目录读取数据
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     // Find out the path of recipes.plist
     //    NSString *path = [[NSBundle mainBundle] pathForResource:@"guidesetting" ofType:@"plist"];
@@ -435,7 +445,8 @@
 +(void) setSmartGuide
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     
     // Load the file content and read the data into arrays

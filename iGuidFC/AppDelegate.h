@@ -10,6 +10,7 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import <sqlite3.h>
 #import <AVFoundation/AVFoundation.h>
+#import "AFDownloadRequestOperation.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, AVAudioPlayerDelegate>
 {
@@ -25,6 +26,7 @@
 @property NSNumber *articleID;
 //当前正在播放的Index
 @property NSInteger currentPlayingIndex;
+@property NSNumber *currentPlayingSpotID;
 @property BOOL femaleVoiceType;
 @property NSInteger backgroundIndex;
 @property NSMutableArray *previousVoice;
@@ -35,12 +37,20 @@
 
 @property NSArray *backgroundMusicList;
 
+@property (nonatomic, readonly) NSMutableArray *downloadOperations;
+
 @property int limiteNum;//免费版的限制语音数量
+
+@property (strong, nonatomic) NSString *username;//如果登陆成功，则不为空
 
 +(sqlite3 *)openDB;
 
 - (void) resumeOrPlay;
 
-- (void) playBackground;
+- (void) playBackground:(NSString *) spotid;
+
+-(void) addDownloadOperationsObject:(AFDownloadRequestOperation *)object;
+-(void) removeOperation:(int) spotid;
+-(AFDownloadRequestOperation *) getOperationWithSpotid:(int) spotid;
 
 @end

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>十三陵神路</name>
+		<Placemark>
+			<name>60101</name>
+			<description><![CDATA[Introduction of the Ming Tombs]]></description>
+			<styleUrl>#poly-000000-1-76</styleUrl>
+			<ExtendedData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.2142479,40.247703,0.0 116.2145215,40.247572,0.0 116.2154388,40.24844000000001,0.0 116.21367930000001,40.2484973,0.0 116.2139636,40.2478709,0.0 116.2142479,40.247703,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>60102</name>
+			<description><![CDATA[Sacred Way]]></description>
+			<styleUrl>#poly-000000-1-76</styleUrl>
+			<ExtendedData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.21659220000001,40.2528659,0.0 116.21712329999998,40.25264070000001,0.0 116.2172869,40.2528884,0.0 116.2173754,40.2531115,0.0 116.2168497,40.253308100000005,0.0 116.21659220000001,40.2528659,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>60104</name>
+			<description><![CDATA[Tablet House]]></description>
+			<styleUrl>#poly-000000-1-76</styleUrl>
+			<ExtendedData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.2171018,40.254155499999996,0.0 116.216737,40.2535537,0.0 116.21762220000001,40.25322210000001,0.0 116.21799230000002,40.2539304,0.0 116.2171018,40.254155499999996,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>60105</name>
+			<description><![CDATA[The Statues]]></description>
+			<styleUrl>#poly-000000-1-76</styleUrl>
+			<ExtendedData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>116.2177348,40.2541473,0.0 116.2241721,40.264136,0.0 116.223464,40.264398,0.0 116.2201968,40.2593955,0.0 116.21726279999999,40.25434390000001,0.0 116.2177348,40.2541473,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Style id='poly-000000-1-76'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C000000</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+	</Document>
+</kml>

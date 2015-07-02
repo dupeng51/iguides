@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>长陵</name>
+		<description><![CDATA[]]></description>
+		<Folder>
+			<name>未命名的图层</name>
+			<Placemark>
+				<name>70101</name>
+				<description><![CDATA[The entrance and the first courtyard]]></description>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>116.24238970000002,40.2974485,0.0 116.24232529999999,40.2969903,0.0 116.24311920000001,40.2969248,0.0 116.2431836,40.297387099999995,0.0 116.24238970000002,40.2974485,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>70102</name>
+				<description><![CDATA[The Hall of Eminent Favor]]></description>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>116.24232,40.29811949999999,0.0 116.2423146,40.297685800000004,0.0 116.2432051,40.29762439999999,0.0 116.243366,40.2980888,0.0 116.24340890000002,40.2985777,0.0 116.24233609999999,40.2986432,0.0 116.24232,40.29811949999999,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>70103</name>
+				<description><![CDATA[The Third courtyard with Spiritual Tower]]></description>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>116.2427598,40.299621,0.0 116.24269009999999,40.2989828,0.0 116.24337140000002,40.2989296,0.0 116.2434357,40.299576,0.0 116.2427598,40.299621,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>70104</name>
+				<description><![CDATA[Baoding]]></description>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>116.24302800000001,40.29981740000001,0.0 116.2435699,40.2997765,0.0 116.24362350000001,40.30035329999999,0.0 116.2427062,40.300382,0.0 116.24267399999998,40.2998378,0.0 116.24302800000001,40.29981740000001,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Style id='poly-000000-1-76'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C000000</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+	</Document>
+</kml>

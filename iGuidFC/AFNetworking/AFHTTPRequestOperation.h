@@ -46,6 +46,7 @@
  */
 @property (nonatomic, readonly) BOOL hasAcceptableStatusCode;
 
+
 /**
  A Boolean value that corresponds to whether the MIME type of the response is among the specified set of acceptable content types. Returns `YES` if `acceptableContentTypes` is `nil`.
  */

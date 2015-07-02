@@ -16,6 +16,7 @@
 #import "FCSettingVC.h"
 #import "DaoArticle.h"
 #import "POSection.h"
+#import "DownloadListVC.h"
 
 @implementation FCMapInfoWindow2
 {
@@ -119,16 +120,30 @@
         [self showUpgrade];
         return;
     }
-    
+    if (!(currentSpot.voice_filetype)) {
+        return;
+    }
     if (isPlay) {
         if (!audioPlayer || isNewSpot) {
             NSURL *fileURL;
             if ([FCSettingVC getfloatByKey:KeyVoiceType]) {
                 //female voice
-                fileURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:(currentSpot.voice_filename1) ofType:(currentSpot.voice_filetype)]];
+                NSString *path = [[NSBundle mainBundle] pathForResource:(currentSpot.voice_filename1) ofType:(currentSpot.voice_filetype)];
+                if (path) {
+                    fileURL = [NSURL fileURLWithPath:path];
+                }
+#ifdef China
+                fileURL = [FCMapInfoWindow2 voicePathWithSubspot:currentSpot voiceFilename:[NSString stringWithFormat:@"%@.%@", currentSpot.voice_filename1, currentSpot.voice_filetype]];
+#endif
             } else {
                 // male voice
-                fileURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:(currentSpot.voice_filename) ofType:(currentSpot.voice_filetype)]];
+                NSString *path = [[NSBundle mainBundle] pathForResource:(currentSpot.voice_filename) ofType:(currentSpot.voice_filetype)];
+                if (path) {
+                    fileURL = [NSURL fileURLWithPath:path];
+                }
+#ifdef China
+                fileURL = [FCMapInfoWindow2 voicePathWithSubspot:currentSpot voiceFilename:[NSString stringWithFormat:@"%@.%@", currentSpot.voice_filename, currentSpot.voice_filetype]];
+#endif
             }
             if (audioPlayer) {
                 if (audioPlayer.isPlaying) {
@@ -140,6 +155,10 @@
             [session setActive:YES error:nil];
             
             audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+            if (!audioPlayer) {
+                [FCMapInfoWindow2 showDownloadAlarm:self];
+                return;
+            }
             appDelegate.audioPlayer = audioPlayer;
 //            if (!(appDelegate.isSmartMode)) {
                 audioPlayer.delegate = self;
@@ -156,10 +175,11 @@
 //            appDelegate.isSmartMode = NO;
 //        }
         
-        [appDelegate playBackground];
+        [appDelegate playBackground:currentSpot.spotID.stringValue];
         
         currentPlayingSpot = currentSpot;
         appDelegate.currentPlayingIndex = currentIndex;
+        appDelegate.currentPlayingSpotID = currentSpot.spotID;
         
         //添加播放的index到回放序列，用于回放
         if (!appDelegate.previousVoice) {
@@ -435,14 +455,24 @@
     if (female) {
         fileURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:(currentSpot.voice_filename) ofType:(currentSpot.voice_filetype)]];
         
+#ifdef China
+        fileURL = [FCMapInfoWindow2 voicePathWithSubspot:currentSpot voiceFilename:[NSString stringWithFormat:@"%@,%@", currentSpot.voice_filename, currentSpot.voice_filetype]];
+#endif
         [voiceTypeBtn setImage:[UIImage imageNamed:@"female.png"] forState:UIControlStateNormal];
         
     } else {
         fileURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:(currentSpot.voice_filename1) ofType:(currentSpot.voice_filetype)]];
+#ifdef China
+        fileURL = [FCMapInfoWindow2 voicePathWithSubspot:currentSpot voiceFilename:[NSString stringWithFormat:@"%@,%@", currentSpot.voice_filename1, currentSpot.voice_filetype]];
+#endif
         [voiceTypeBtn setImage:[UIImage imageNamed:@"male.png"] forState:UIControlStateNormal];
     }
     [FCSettingVC setKey:[NSNumber numberWithBool:!female] key:KeyVoiceType];
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    if (!audioPlayer) {
+        [FCMapInfoWindow2 showDownloadAlarm:self];
+        return;
+    }
     audioPlayer.delegate = self;
     
     float voice_volume = [FCSettingVC getfloatByKey:keyVoiceVolume];
@@ -509,17 +539,21 @@
 + (void)configPlayingInfo:(POArticle *) spot;
 {
 //    POArticle *spot = [voiceSpots objectAtIndex:appDelegate.currentPlayingIndex];
-    if (!spot.title || !spot.imagename){
+    if (!spot.title || !(spot.imagename)){
         return;
     }
 	if (NSClassFromString(@"MPNowPlayingInfoCenter")) {
 		NSMutableDictionary * dict = [[NSMutableDictionary alloc] init];
 		[dict setObject: spot.title forKey:MPMediaItemPropertyTitle];
 		[dict setObject:@"iGuide" forKey:MPMediaItemPropertyArtist];
-		[dict setObject:[[MPMediaItemArtwork alloc] initWithImage:[UIImage imageNamed:spot.imagename]] forKey:MPMediaItemPropertyArtwork];
-        
-//		[[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:nil];
-		[[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:dict];
+        UIImage *image = [UIImage imageNamed:spot.imagename];
+        if (image) {
+            [dict setObject:[[MPMediaItemArtwork alloc] initWithImage:image] forKey:MPMediaItemPropertyArtwork];
+            
+            //		[[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:nil];
+            [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:dict];
+        }
+		
         
         dict = nil;
 	}
@@ -556,16 +590,52 @@
                                           cancelButtonTitle:@"Cancel"
                                           otherButtonTitles:@"OK",
                           nil];
+    alert.tag = 1;
     [alert show];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (buttonIndex == 1) {
-        UIViewController *childController = [[self viewController].storyboard instantiateViewControllerWithIdentifier:@"settingVC"];
-        [[self viewController].navigationController pushViewController:childController animated:YES];
+    if (alertView.tag == 1) {
+        //Limited for Free Version
+        if (buttonIndex == 1) {
+            UIViewController *childController = [[self viewController].storyboard instantiateViewControllerWithIdentifier:@"settingVC"];
+            [[self viewController].navigationController pushViewController:childController animated:YES];
+        }
+    } else {
+        //download Voice
+        if (buttonIndex == 1) {
+            DownloadListVC *childController = [[self viewController].storyboard instantiateViewControllerWithIdentifier:@"downloadlistvc"];
+            [childController addSpotToDownload:currentSpot.spotID.intValue];
+            [[self viewController].navigationController pushViewController:childController animated:YES];
+        }
     }
+    
 }
 
+#pragma mark - iGuide China
+// for iGuide China
++ (NSURL *) voicePathWithSubspot:(POArticle *) subSpot voiceFilename:(NSString *) filename {
+    return [NSURL fileURLWithPath:[[DownloadListVC directoryWithSpotID:[subSpot.spotID stringValue]] stringByAppendingPathComponent:filename]];
+}
+
++ (BOOL) voiceExistWithSubspot:(POArticle *) subSpot
+{
+    NSURL * fileURL = [FCMapInfoWindow2 voicePathWithSubspot:subSpot voiceFilename:[NSString stringWithFormat:@"%@.%@", subSpot.voice_filename, subSpot.voice_filetype]];
+    NSFileManager * filemanager = [[NSFileManager alloc] init];
+    return [filemanager fileExistsAtPath:fileURL.path];
+}
+
++ (void) showDownloadAlarm:(id) delegete
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                    message:@"Download voice package for this spot?"
+                                                   delegate:delegete
+                                          cancelButtonTitle:@"Cancel"
+                                          otherButtonTitles:@"Ok",
+                          nil];
+    alert.tag = 2;
+    [alert show];
+}
 
 #pragma mark - Audio method
 

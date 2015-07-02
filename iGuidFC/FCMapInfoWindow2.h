@@ -67,6 +67,8 @@
 - (IBAction)detailedWindow:(id)sender;
 - (IBAction)specialBtnClick:(id)sender;
 
-+ (void)configPlayingInfo:(POArticle *) spot;
++ (void) configPlayingInfo:(POArticle *) spot;
++ (BOOL) voiceExistWithSubspot:(POArticle *) subSpot;
++ (void) showDownloadAlarm:(id) delegete;
 
 @end

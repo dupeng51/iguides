@@ -241,8 +241,8 @@
 //        textview.font = [UIFont systemFontOfSize:FONT_SIZE];
 //        [textview sizeToFit];
         
-        [textview setLineBreakMode: UILineBreakModeWordWrap];
-        [textview setMinimumFontSize:FONT_SIZE];
+        [textview setLineBreakMode: NSLineBreakByWordWrapping];
+//        [textview setMinimumFontSize:FONT_SIZE];
         [textview setNumberOfLines:0];
         [textview setFont:[UIFont systemFontOfSize:FONT_SIZE]];
 //        [textview setTag:1];
@@ -251,7 +251,7 @@
         
         CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
         NSString *text = articleSection.textcontent;
-        CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+        CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
         
         [textview setText: text];
         [textview setFrame:CGRectMake(CELL_CONTENT_MARGIN, CELL_CONTENT_MARGIN, CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), MAX(size.height+ (CELL_CONTENT_MARGIN * 2), 33.0f))];
@@ -271,7 +271,7 @@
         cell = [tableView dequeueReusableCellWithIdentifier:titleIdentifier];
         UILabel *textview = (UILabel *)[cell viewWithTag:1];
         
-        [textview setLineBreakMode: UILineBreakModeWordWrap];
+        [textview setLineBreakMode: NSLineBreakByWordWrapping];
         [textview setMinimumFontSize:TITLEFONT_SIZE];
         [textview setNumberOfLines:0];
         [textview setFont:[UIFont fontWithName:@"Arial" size:TITLEFONT_SIZE]];
@@ -287,7 +287,7 @@
         } else {
             text = articleTitle;
         };
-        CGSize size = [text sizeWithFont:[UIFont fontWithName:@"Arial" size:TITLEFONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+        CGSize size = [text sizeWithFont:[UIFont fontWithName:@"Arial" size:TITLEFONT_SIZE] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
         
         [textview setText: text];
         [textview setFrame:CGRectMake(CELL_CONTENT_MARGIN, CELL_CONTENT_MARGIN, CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), MAX(size.height+ (CELL_CONTENT_MARGIN * 2), 33.0f))];
@@ -317,7 +317,7 @@
         cell = [tableView dequeueReusableCellWithIdentifier:relatedIdentifier];
         UILabel *textview = (UILabel *)[cell viewWithTag:1];
         
-        [textview setLineBreakMode: UILineBreakModeWordWrap];
+        [textview setLineBreakMode: NSLineBreakByWordWrapping];
         [textview setMinimumFontSize:TITLEFONT_SIZE];
         [textview setNumberOfLines:0];
         [textview setFont:[UIFont fontWithName:@"Arial" size:TITLEFONT_SIZE]];
@@ -331,7 +331,7 @@
         if (articleSection.textcontent) {
             text = articleSection.textcontent;
         };
-        CGSize size = [text sizeWithFont:[UIFont fontWithName:@"Arial" size:TITLEFONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+        CGSize size = [text sizeWithFont:[UIFont fontWithName:@"Arial" size:TITLEFONT_SIZE] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
         
         [textview setText: text];
         [textview setFrame:CGRectMake(CELL_CONTENT_MARGIN, CELL_CONTENT_MARGIN, CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 3), MAX(size.height+ (CELL_CONTENT_MARGIN * 2), 33.0f))];
@@ -359,7 +359,9 @@
     }
     //缓存Cell
 //    [_cellCache setObject:cell forKey:@(row)];
-    
+    if (!cell) {
+        NSLog(@"not have articleSection type '%@'", articleSection.type);
+    }
     return cell;
 }
 
@@ -374,7 +376,7 @@
         
         CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
         
-        CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+        CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
         
         CGFloat height = size.height + (CELL_CONTENT_MARGIN * 2);
         
@@ -384,12 +386,10 @@
     if ([articleSection.type isEqualToString:imageIdentifier]) {
         POSection *articleSection = [articles objectAtIndex:[indexPath row]];
         UIImage *image = [UIImage imageNamed:articleSection.imagename];
-        
-        CGFloat height = CELL_CONTENT_WIDTH * image.size.height /image.size.width;
-        
-        image = nil;
-        articleSection = nil;
-        return height;
+        if (image) {
+            CGFloat height = CELL_CONTENT_WIDTH * image.size.height /image.size.width;
+            return height;
+        }
     }
     if ([articleSection.type isEqualToString:positionIdentifier]) {
         UITableViewCell *tableViewCell = [tableView dequeueReusableCellWithIdentifier:positionIdentifier];
@@ -425,7 +425,7 @@
         
         CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
         
-        CGSize size = [text sizeWithFont:[UIFont fontWithName:@"Arial" size:TITLEFONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+        CGSize size = [text sizeWithFont:[UIFont fontWithName:@"Arial" size:TITLEFONT_SIZE] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
         
         CGFloat height = size.height + (CELL_CONTENT_MARGIN * 2);
         
@@ -440,7 +440,7 @@
         
         CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 3), 20000.0f);
         
-        CGSize size = [text sizeWithFont:[UIFont fontWithName:@"Arial" size:TITLEFONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+        CGSize size = [text sizeWithFont:[UIFont fontWithName:@"Arial" size:TITLEFONT_SIZE] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
         
         CGFloat height = size.height + (CELL_CONTENT_MARGIN * 2);
         
@@ -842,7 +842,6 @@
     
     index = -1;
     oldIndex = -1;
-    dao = nil;
 }
 // A function for parsing URL parameters returned by the Feed Dialog.
 - (NSDictionary*)parseURLParams:(NSString *)query {

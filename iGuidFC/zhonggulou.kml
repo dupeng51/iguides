@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>未命名的地图</name>
+		<description><![CDATA[]]></description>
+		<Folder>
+			<name>未命名的图层</name>
+			<Placemark>
+				<name>130101</name>
+				<description><![CDATA[钟楼]]></description>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>108.9419854,34.2613398,0.0 108.94196390000002,34.26070130000001,0.0 108.9428651,34.2607102,0.0 108.9428329,34.26141069999999,0.0 108.9419854,34.2613398,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>130102</name>
+				<description><![CDATA[鼓楼]]></description>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>108.9383376,34.26206470000001,0.0 108.9383429,34.26157250000001,0.0 108.9393702,34.2615659,0.0 108.9393756,34.2620824,0.0 108.9383376,34.26206470000001,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Style id='poly-000000-1-76-normal'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C000000</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-000000-1-76-highlight'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>2.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C000000</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<StyleMap id='poly-000000-1-76'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#poly-000000-1-76-normal</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#poly-000000-1-76-highlight</styleUrl>
+			</Pair>
+		</StyleMap>
+	</Document>
+</kml>

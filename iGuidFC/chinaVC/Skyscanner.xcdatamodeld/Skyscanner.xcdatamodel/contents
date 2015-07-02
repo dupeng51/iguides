@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C1514" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Agents" representedClassName="Agents" syncable="YES">
+        <attribute name="bookingNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="optimisedForMobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Carriers" representedClassName="Carriers" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Itinerary" representedClassName="Itinerary" syncable="YES">
+        <attribute name="bookingDetailsLinkBody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bookingDetailsLinkBodyMethod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bookingDetailsLinkURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="formattedData" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="inboundLegId" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Leg" syncable="YES"/>
+        <relationship name="outboundLegId" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Leg" syncable="YES"/>
+        <relationship name="pricingOptions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PriceOption" syncable="YES"/>
+    </entity>
+    <entity name="Leg" representedClassName="Leg" syncable="YES">
+        <attribute name="arrival" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carriers" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="departure" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="directionality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flightNumbers" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="journeyMode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="operatingCarriers" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="segmentIds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stops" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="destinationStation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Station" syncable="YES"/>
+        <relationship name="originStation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Station" syncable="YES"/>
+    </entity>
+    <entity name="PriceOption" representedClassName="PriceOption" syncable="YES">
+        <attribute name="agents" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="deeplinkUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quoteAgeInMinutes" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Station" representedClassName="Station" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Agents" positionX="-317" positionY="-229" width="128" height="148"/>
+        <element name="Carriers" positionX="-522" positionY="-279" width="128" height="120"/>
+        <element name="Itinerary" positionX="-227" positionY="27" width="128" height="148"/>
+        <element name="Leg" positionX="-578" positionY="-148" width="128" height="238"/>
+        <element name="PriceOption" positionX="-585" positionY="144" width="128" height="103"/>
+        <element name="Station" positionX="-810" positionY="-261" width="128" height="118"/>
+    </elements>
+</model>

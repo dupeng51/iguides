@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>定陵</name>
+		<description><![CDATA[]]></description>
+		<Folder>
+			<name>未命名的图层</name>
+			<Placemark>
+				<name>80101</name>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>116.22043850000001,40.29385609999999,0.0 116.21953720000002,40.2926204,0.0 116.2210715,40.2919904,0.0 116.22196199999999,40.2932915,0.0 116.22043850000001,40.29385609999999,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>80102</name>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>116.2188184,40.2930623,0.0 116.2197089,40.2942244,0.0 116.2181318,40.294879,0.0 116.2173271,40.2936515,0.0 116.2188184,40.2930623,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>80103</name>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>116.21681210000001,40.2939298,0.0 116.2176919,40.2952064,0.0 116.21709110000002,40.2954764,0.0 116.2161791,40.294118,0.0 116.21681210000001,40.2939298,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>80104</name>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>116.215353,40.2963847,0.0 116.2139046,40.2951,0.0 116.21521350000002,40.2946499,0.0 116.2165332,40.2961883,0.0 116.21542810000001,40.2965975,0.0 116.215353,40.2963847,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>未命名的图层</name>
+		</Folder>
+		<Style id='poly-000000-1-76'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C000000</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+	</Document>
+</kml>

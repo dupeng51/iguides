@@ -10,6 +10,8 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import "iRate.h"
 #import "FCSettingVC.h"
+#import "POSpot.h"
+#import "DownloadListVC.h"
 
 @implementation AppDelegate
 
@@ -75,7 +77,8 @@ static sqlite3 *db;
     //resource目录是只读的，要拷贝到Document目录
     NSError *error;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -96,7 +99,20 @@ static sqlite3 *db;
 #ifdef LT
         backgroundMusicList = [[NSBundle mainBundle] pathsForResourcesOfType:@"mp3" inDirectory:@"LamaMusic"];
 #endif
+#ifdef China
+//        backgroundMusicList = [[NSBundle mainBundle] pathsForResourcesOfType:@"mp3" inDirectory:@"THMusic"];
+#endif
     }
+    
+    //copy database for iGuide China
+#ifdef China
+    NSString *dateTmpPath = [documentsDirectory stringByAppendingPathComponent:@"china.sqlite"];
+    if (![fileManager fileExistsAtPath: dateTmpPath])
+    {
+        NSString * dataPath = [[NSBundle mainBundle] pathForResource:@"china" ofType:@"sqlite"];
+        [fileManager copyItemAtPath:dataPath toPath: dateTmpPath error:&error];
+    }
+#endif
     
     return YES;
 }
@@ -148,6 +164,12 @@ static sqlite3 *db;
 #ifdef LT
     dataPath = [[NSBundle mainBundle] pathForResource:@"lamaTemple" ofType:@"sqlite"];
 #endif
+    
+#ifdef China
+    NSString *documentsDirectory= NSTemporaryDirectory();
+    dataPath = [documentsDirectory stringByAppendingPathComponent:@"china.sqlite"];
+//    dataPath = [[NSBundle mainBundle] pathForResource:@"china" ofType:@"sqlite"];
+#endif
 //    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 //    NSString *documents = [paths objectAtIndex:0];
 //    NSString *database_path = [documents stringByAppendingPathComponent:DBNAME];
@@ -156,7 +178,6 @@ static sqlite3 *db;
         sqlite3_close(db);
         NSLog(@"数据库打开失败");
     }
-    dataPath = nil;
     return db;
 }
 //黑屏和home键都会进入该方法
@@ -193,6 +214,8 @@ static sqlite3 *db;
     window = nil;
     articleID = nil;
     previousVoice = nil;
+    _downloadOperations = nil;
+    _currentPlayingSpotID = nil;
     NSLog(@"退出app");
     
 }
@@ -227,11 +250,12 @@ static sqlite3 *db;
     [backgroundPlayer play];
 }
 
-- (void) playBackground
+- (void) playBackground:(NSString *) spotid
 {
     //从Document目录读取数据
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
     float on = [[dict objectForKey:keyMusic] floatValue];
@@ -239,10 +263,18 @@ static sqlite3 *db;
     
     if (on == 1) {
         if (!backgroundPlayer) {
-            
             int beganIndex = arc4random_uniform(backgroundMusicList.count);
             
             NSURL *fileURL = [NSURL fileURLWithPath:[backgroundMusicList objectAtIndex:beganIndex]];
+#ifdef China
+            NSArray *musicPaths = [DownloadListVC getBackgroundPaths:spotid];
+            if (musicPaths) {
+                backgroundMusicList = musicPaths;
+                beganIndex = arc4random_uniform(musicPaths.count);
+                
+                fileURL = [NSURL fileURLWithPath:[musicPaths objectAtIndex:beganIndex]];
+            }
+#endif
             backgroundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
             //            if (!(appDelegate.isSmartMode)) {
             backgroundPlayer.delegate = self;
@@ -284,6 +316,36 @@ static sqlite3 *db;
         [params setObject:val forKey:[kv objectAtIndex:0]];
     }
     return params;
+}
+
+-(void) addDownloadOperationsObject:(AFDownloadRequestOperation *)object
+{
+    if (!_downloadOperations) {
+        _downloadOperations = [[NSMutableArray alloc] init];
+    }
+    AFDownloadRequestOperation * operation = [self getOperationWithSpotid:((POSpot *)object.userData).pid.intValue];
+    if (operation) {
+        return;
+    }
+    [self.downloadOperations addObject:object];
+}
+
+-(void) removeOperation:(int) spotid
+{
+    AFDownloadRequestOperation * operation = [self getOperationWithSpotid:spotid];
+    if (operation) {
+        [self.downloadOperations removeObject:operation];
+    }
+}
+
+-(AFDownloadRequestOperation *) getOperationWithSpotid:(int) spotid
+{
+    for (AFDownloadRequestOperation *operation in self.downloadOperations) {
+        if (((POSpot *)operation.userData).pid.intValue == spotid) {
+            return operation;
+        }
+    }
+    return nil;
 }
 
 @end

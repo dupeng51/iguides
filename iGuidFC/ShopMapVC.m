@@ -1112,7 +1112,8 @@
     
     //添加故宫地图图片
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+//    NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+    NSString *documentsDirectory= NSTemporaryDirectory();
     NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName]; //3
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
     
@@ -1200,7 +1201,8 @@
             [alert show];
             
             NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-            NSString *documentsDirectory = [paths objectAtIndex:0];
+//            NSString *documentsDirectory = [paths objectAtIndex:0];
+            NSString *documentsDirectory= NSTemporaryDirectory();
             NSString *path = [documentsDirectory stringByAppendingPathComponent:plistFileName];
             
             // Load the file content and read the data into arrays

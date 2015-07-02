@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>170101</name>
+		<description><![CDATA[city wall in Xi'an]]></description>
+		<Folder>
+			<name>未命名的图层</name>
+			<Placemark>
+				<name>170101</name>
+				<description><![CDATA[西门]]></description>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>108.9193583,34.2616679,0.0 108.9194226,34.2598235,0.0 108.9218473,34.2598412,0.0 108.9218259,34.261756500000004,0.0 108.9193583,34.2616679,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>170104</name>
+				<description><![CDATA[南门]]></description>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>108.9412236,34.25411270000001,0.0 108.9413524,34.25026400000001,0.0 108.9434981,34.25031719999999,0.0 108.94345520000002,34.2543256,0.0 108.9412236,34.25411270000001,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>170102</name>
+				<description><![CDATA[北门]]></description>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>108.941803,34.27861120000001,0.0 108.941803,34.2766342,0.0 108.94345520000002,34.2766431,0.0 108.9433372,34.27869989999999,0.0 108.941803,34.27861120000001,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>170103</name>
+				<description><![CDATA[东门]]></description>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>108.9655727,34.2618762,0.0 108.9655513,34.2600141,0.0 108.9678901,34.2601161,0.0 108.9676917,34.2619383,0.0 108.9655727,34.2618762,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>170105</name>
+				<description><![CDATA[文昌门]]></description>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>108.9487123,34.2536738,0.0 108.9487177,34.2531772,0.0 108.950327,34.2531683,0.0 108.950268,34.2536339,0.0 108.9487123,34.2536738,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Style id='poly-000000-1-76-normal'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C000000</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-000000-1-76-highlight'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>2.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C000000</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<StyleMap id='poly-000000-1-76'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#poly-000000-1-76-normal</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#poly-000000-1-76-highlight</styleUrl>
+			</Pair>
+		</StyleMap>
+	</Document>
+</kml>

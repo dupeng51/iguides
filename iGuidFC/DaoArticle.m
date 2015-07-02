@@ -10,7 +10,9 @@
 #import "AppDelegate.h"
 #import "POArticle.h"
 #import "POSection.h"
+#import "MapVC.h"
 #import "FCMapController.h"
+
 
 @implementation DaoArticle
 
@@ -27,6 +29,7 @@
 #define TableTypeTicket @"ticket"
 #define TableTypeSubway @"subway"
 #define TableTypeShop @"shop"
+#define TableTypeCheckpoint @"check point"
 
 //根据文章ID读取所有文章的段落集合
 - (NSArray *)findAllArticleSectionsByID: (NSNumber *) masterID;
@@ -138,6 +141,12 @@
     return [self queryArticleWithSQL:sqlQuery];
 }
 
+- (NSArray *)getAllSpotsWithSpotid:(NSString *) spotid
+{
+    NSString *sqlQuery = [NSString stringWithFormat:@"SELECT * FROM fc_article where type = '%@' and spotID = %@ order by orderno", TableTypeSpot, spotid] ;
+    return [self queryArticleWithSQL:sqlQuery];
+}
+
 - (NSArray *)getAllSpots
 {
     return [self getArticleByType:TableTypeSpot];
@@ -193,6 +202,11 @@
     return [self getArticleByType:TableTypeSubway];
 }
 
+- (NSArray *)getAllCheckpoint
+{
+    return [self getArticleByType:TableTypeCheckpoint];
+}
+
 - (NSArray *)getAllSpots1 {
     NSString *sqlQuery = @"SELECT * FROM fc_article where type = 'spot' and line2no <> '' order by orderno";
     return [self queryArticleWithSQL:sqlQuery];
@@ -230,9 +244,15 @@
             
             poarticle.orderno = sqlite3_column_int(statement, 2);
             
-            CLLocationCoordinate2D pos = [FCMapController offsetCoordinate:CLLocationCoordinate2DMake(sqlite3_column_double(statement, 3), sqlite3_column_double(statement, 4))];
+            CLLocationCoordinate2D location = CLLocationCoordinate2DMake(sqlite3_column_double(statement, 3), sqlite3_column_double(statement, 4));
+            
+            CLLocationCoordinate2D pos = [FCMapController offsetCoordinate:location];
 #ifdef LT
-            pos = CLLocationCoordinate2DMake(sqlite3_column_double(statement, 3), sqlite3_column_double(statement, 4));
+            pos = location;
+#endif
+#ifdef China
+            NSString *spotidString = [NSString stringWithFormat:@"%d", sqlite3_column_int(statement, 16)];
+            pos = [MapVC offsetCoordinate:location spotid:spotidString];
 #endif
             poarticle.positionx = pos.latitude;
             poarticle.positiony = pos.longitude;
@@ -284,7 +304,10 @@
                 poarticle.picture = [[NSString alloc]initWithUTF8String:picture];
             }
             
-            char *voice_filename1 = (char*)sqlite3_column_text(statement, 16);
+            poarticle.spotID = [NSNumber numberWithInt:sqlite3_column_int(statement, 16)];
+            poarticle.cityID = [NSNumber numberWithInt:sqlite3_column_int(statement, 17)];
+            
+            char *voice_filename1 = (char*)sqlite3_column_text(statement, 18);
             if (voice_filename1) {
                 poarticle.voice_filename1 = [[NSString alloc]initWithUTF8String:voice_filename1];
             }
@@ -298,6 +321,177 @@
     statement = nil;
     sqlite3_close(db);
     db = nil;
+    return data;
+}
+
+#pragma mark - city
+
+-(NSArray *) getAllCitys
+{
+    NSString *sqlQuery = [NSString stringWithFormat:@"SELECT * FROM city"] ;
+    return [self queryCityWithSQL:sqlQuery];
+}
+
+-(POCity *) getCityWithID:(NSString *) cityid
+{
+    NSString *sqlQuery = [NSString stringWithFormat:@"SELECT * FROM city where pid = %@", cityid] ;
+    return [[self queryCityWithSQL:sqlQuery] objectAtIndex:0];
+}
+
+- (NSArray *) queryCityWithSQL:(NSString *) sqlQuery
+{
+    NSMutableArray *data;
+    sqlite3 *db = [AppDelegate openDB];
+    sqlite3_stmt *statement;
+    if (sqlite3_prepare_v2(db, [sqlQuery UTF8String], -1, &statement, nil) == SQLITE_OK) {
+        data = [NSMutableArray array];
+        while (sqlite3_step(statement) == SQLITE_ROW) {
+            POCity *poarticle = [[POCity alloc]init];
+            
+            poarticle.pid = [NSNumber numberWithInt:sqlite3_column_int(statement, 0)];
+            
+            char *name = (char*)sqlite3_column_text(statement, 1);
+            if (name) {
+                poarticle.name = [[NSString alloc]initWithUTF8String:name];
+                name = nil;
+            }
+            
+            poarticle.lat = sqlite3_column_double(statement, 2);
+            poarticle.lon = sqlite3_column_double(statement, 3);
+            
+            char *remark = (char*)sqlite3_column_text(statement, 4);
+            if (remark) {
+                poarticle.desc = [[NSString alloc]initWithUTF8String:remark];
+            }
+            
+            char *imagename = (char*)sqlite3_column_text(statement, 5);
+            if (imagename) {
+                poarticle.imageName = [[NSString alloc]initWithUTF8String:imagename];
+            }
+            poarticle.north = sqlite3_column_double(statement, 6);
+            poarticle.south = sqlite3_column_double(statement, 7);
+            poarticle.east = sqlite3_column_double(statement, 8);
+            poarticle.west = sqlite3_column_double(statement, 9);
+            
+            [data addObject:poarticle];
+            
+            //            NSLog(@"name:%@", poarticle.title);
+        }
+    }
+    sqlite3_close(db);
+    return data;
+}
+
+#pragma mark - spot
+
+-(NSArray *) getBigSpotWithCityID:(NSString *) cityid
+{
+    NSString *sqlQuery = [NSString stringWithFormat:@"SELECT * FROM spot where CityID = %@", cityid];
+    return [self queryBigSpotWithSQL:sqlQuery];
+}
+
+-(POSpot *) getBigSpotWithID:(NSString *) spotid
+{
+    NSString *sqlQuery = [NSString stringWithFormat:@"SELECT * FROM spot where pid = %@", spotid];
+    NSArray *result =  [self queryBigSpotWithSQL:sqlQuery];
+    if (result.count >0) {
+        return [result objectAtIndex:0];
+    }
+    return nil;
+}
+
+-(BOOL) setBigSpotWithDownloadStatus:(int) downloadStatus spotid:(NSString *) spotid
+{
+    sqlite3 *db = [AppDelegate openDB];
+    NSString *insertSQL = @"";
+    char *errmsg;
+    BOOL result;
+    
+    insertSQL = [NSString stringWithFormat: @"update spot set DownloadStatus = %d where pid = %@", downloadStatus, spotid];
+    const char *insert_stmt = [insertSQL UTF8String];
+    if(sqlite3_exec(db, insert_stmt, NULL, NULL, &errmsg)==SQLITE_OK)
+    {
+        result = YES;
+        NSLog(@".. spot updated ..");
+    } else {
+        result = NO;
+        NSLog(@"update spot error: %s", errmsg);
+    }
+    
+    sqlite3_close(db);
+    
+    return result;
+}
+
+-(NSArray *) getDownloadBigSpot
+{
+    NSString *sqlQuery = [NSString stringWithFormat:@"SELECT * FROM spot where DownloadStatus = 1 or DownloadStatus = 2"];
+    return [self queryBigSpotWithSQL:sqlQuery];
+}
+
+-(NSArray *) getAllBigSpot{
+    NSString *sqlQuery = [NSString stringWithFormat:@"SELECT * FROM spot"];
+    return [self queryBigSpotWithSQL:sqlQuery];
+}
+
+- (NSArray *) queryBigSpotWithSQL:(NSString *) sqlQuery
+{
+    NSMutableArray *data;
+    sqlite3 *db = [AppDelegate openDB];
+    sqlite3_stmt *statement;
+    if (sqlite3_prepare_v2(db, [sqlQuery UTF8String], -1, &statement, nil) == SQLITE_OK) {
+        data = [NSMutableArray array];
+        while (sqlite3_step(statement) == SQLITE_ROW) {
+            POSpot *poarticle = [[POSpot alloc] init];
+            
+            poarticle.pid = [NSNumber numberWithInt:sqlite3_column_int(statement, 0)];
+            
+            char *name = (char*)sqlite3_column_text(statement, 1);
+            if (name) {
+                poarticle.name = [[NSString alloc]initWithUTF8String:name];
+                name = nil;
+            }
+            
+            poarticle.lat = sqlite3_column_double(statement, 2) + sqlite3_column_double(statement, 11);
+            poarticle.lon = sqlite3_column_double(statement, 3) + sqlite3_column_double(statement, 12);
+            
+            char *remark = (char*)sqlite3_column_text(statement, 4);
+            if (remark) {
+                poarticle.desc = [[NSString alloc]initWithUTF8String:remark];
+            }
+            
+            char *imagename = (char*)sqlite3_column_text(statement, 5);
+            if (imagename) {
+                poarticle.imageName = [[NSString alloc]initWithUTF8String:imagename];
+            }
+            
+            poarticle.cityID = [NSNumber numberWithInt:sqlite3_column_int(statement, 6)];
+            
+            poarticle.north = sqlite3_column_double(statement, 7);
+            poarticle.south = sqlite3_column_double(statement, 8);
+            poarticle.east = sqlite3_column_double(statement, 9);
+            poarticle.west = sqlite3_column_double(statement, 10);
+            
+            poarticle.latOffset = sqlite3_column_double(statement, 11);
+            poarticle.lonOffset = sqlite3_column_double(statement, 12);
+            
+            char *URL = (char*)sqlite3_column_text(statement, 13);
+            if (URL) {
+                poarticle.downloadurl = [[NSString alloc]initWithUTF8String:URL];
+            }
+            poarticle.downloadStatus = [NSNumber numberWithInt:sqlite3_column_int(statement, 14)];
+            
+            poarticle.WGS = sqlite3_column_int(statement,15);
+            
+            char *kmlFileName = (char*)sqlite3_column_text(statement, 16);
+            if (kmlFileName) {
+                poarticle.kmlFileName = [[NSString alloc]initWithUTF8String:kmlFileName];
+            }
+            
+            [data addObject:poarticle];
+        }
+    }
+    sqlite3_close(db);
     return data;
 }
 

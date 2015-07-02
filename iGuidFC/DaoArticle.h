@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "POCity.h"
+#import "POSpot.h"
 
 @interface DaoArticle : NSObject
 
@@ -16,6 +18,7 @@
 
 //获取tabeletype为ChinaThing的数据
 //- (NSArray *)getArticleByType:(NSString *) tableType;
+- (NSArray *)getAllSpotsWithSpotid:(NSString *) spotid;
 - (NSArray *)getAllTips;
 - (NSArray *)getAllSpots;
 - (NSArray *)getAllSpots1;
@@ -30,7 +33,18 @@
 - (NSArray *)getAllAbout;
 - (NSArray *)getAllDavid;
 - (NSArray *)getAllShop;
+- (NSArray *)getAllCheckpoint;
 
 - (NSArray *)getArticleByID:(NSString *) articleID;
+
+-(NSArray *) getAllCitys;
+-(POCity *) getCityWithID:(NSString *) cityid;
+
+-(NSArray *) getAllBigSpot;
+-(NSArray *) getDownloadBigSpot;
+-(BOOL) setBigSpotWithDownloadStatus:(int) downloadStatus spotid:(NSString *) spotid;
+-(NSArray *) getBigSpotWithCityID:(NSString *) cityid;
+-(POSpot *) getBigSpotWithID:(NSString *) spotid;
+
 
 @end

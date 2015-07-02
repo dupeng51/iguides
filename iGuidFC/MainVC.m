@@ -7,6 +7,7 @@
 //
 
 #import "MainVC.h"
+#import "Constants.h"
 
 @interface MainVC ()
 
@@ -79,6 +80,32 @@
             break;
         case 7:
             identifier = @"settingsRow";
+            break;
+    }
+#endif
+    
+#ifdef China
+    switch (indexPath.row) {
+        case 1:
+            identifier = @"firstRow";
+            break;
+        case 2:
+            identifier = @"secondRow";
+            break;
+        case 3:
+            identifier = @"ThirdRow";
+            break;
+        case 4:
+            identifier = @"ForthRow";
+            break;
+        case 5:
+            identifier = @"FifthRow";
+            break;
+        case 6:
+            identifier = @"LimosRow";
+            break;
+        case 7:
+            identifier = @"sevenRow";
             break;
     }
 #endif

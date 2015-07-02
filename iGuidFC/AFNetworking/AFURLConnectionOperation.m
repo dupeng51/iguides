@@ -796,7 +796,7 @@ didReceiveResponse:(NSURLResponse *)response
         const uint8_t *dataBuffer = (uint8_t *) [data bytes];
         [self.outputStream write:&dataBuffer[0] maxLength:length];
     }
-    
+
     dispatch_async(dispatch_get_main_queue(), ^{
         self.totalBytesRead += length;
         

@@ -7,7 +7,13 @@
 //
 
 #import "AMSlideMenuLeftTableViewController.h"
+#import "LocalSession.h"
 
-@interface LeftMenuVC : AMSlideMenuLeftTableViewController
+@interface LeftMenuVC : AMSlideMenuLeftTableViewController<LocalDelegation>
+
+@property IBOutlet UIButton *userBtn;
+@property IBOutlet UIImageView *userImage;
+
+- (IBAction)userAction:(id)sender;
 
 @end
