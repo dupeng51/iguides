@@ -58,6 +58,7 @@
     
     [client getPath:Path_hotellist parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"%@",operation);
+        
         ELongRData *resultData =[self getMapedObject:responseObject];
         if (resultData) {
             [self.delegate returnHotelList:resultData.result];
